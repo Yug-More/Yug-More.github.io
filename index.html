@@ -1,307 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yug More - Computer Science & Data Analytics</title>
-    <link rel="stylesheet" href="portfolio.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yug More - Computer Science & Data Analytics</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="portfolio.css">
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
 </head>
+
 <body>
-    <div id="canvas-container"></div>
-    
-    <div class="content">
-        <header>
-            <h1 class="hero-title">YUG MORE</h1>
-            <p class="hero-subtitle">Computer Science & Data Analytics</p>
-            <p class="hero-description">
-                Teaching Assistant | Data Science Explorer | Building innovative solutions
-            </p>
-            
-            <div class="nav-orbs">
-                <div class="orb" onclick="scrollToSection('experience')">
-                    <div class="orb-icon">🚀</div>
-                    <div class="orb-label">Experience</div>
-                </div>
-                <div class="orb" onclick="scrollToSection('projects')">
-                    <div class="orb-icon">💻</div>
-                    <div class="orb-label">Projects</div>
-                </div>
-                <div class="orb" onclick="scrollToSection('research')">
-                    <div class="orb-icon">🔬</div>
-                    <div class="orb-label">Research</div>
-                </div>
-                <div class="orb" onclick="scrollToSection('education')">
-                    <div class="orb-icon">🎓</div>
-                    <div class="orb-label">Education</div>
-                </div>
-                <div class="orb" onclick="scrollToSection('skills')">
-                    <div class="orb-icon">⚡</div>
-                    <div class="orb-label">Skills</div>
-                </div>
-                <div class="orb" onclick="scrollToSection('contact')">
-                    <div class="orb-icon">📬</div>
-                    <div class="orb-label">Contact</div>
-                </div>
-            </div>
-            
-            <div class="scroll-indicator"></div>
-        </header>
+  <div id="canvas-container"></div>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2 class="section-title">Experience Journey</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <h3 class="card-title">👨‍🏫 Teaching Assistant - Java</h3>
-                    <p class="card-subtitle">San Jose State University | Aug 2025 - Present</p>
-                    <div class="card-content">
-                        <ul>
-                            <li>Grade assignments and provide feedback using BlueJ and VS Code to improve code efficiency</li>
-                            <li>Guide 50+ students with OOP, data structures, and debugging techniques</li>
-                        </ul>
-                    </div>
-                </div>
+  <div class="content">
+    <header>
+      <h1 class="hero-title">YUG MORE</h1>
+      <p class="hero-subtitle">Computer Science & Data Analytics</p>
+      <p class="hero-description">
+        Teaching Assistant | Data Science Explorer | Building innovative solutions
+      </p>
 
-                <div class="card">
-                    <h3 class="card-title">🏠 Resident Advisor</h3>
-                    <p class="card-subtitle">San Jose State University | Jul 2024 - Present</p>
-                    <div class="card-content">
-                        <ul>
-                            <li>Leading community of 200+ residents, fostering leadership and conflict resolution</li>
-                            <li>Organized 10+ events promoting well-being and cultural inclusivity</li>
-                            <li>Improved student satisfaction by 63% and building occupancy by 12%</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">🐍 Teaching Assistant - Python</h3>
-                    <p class="card-subtitle">San Jose State University | Jan 2024 - Present</p>
-                    <div class="card-content">
-                        <ul>
-                            <li>Mentored 400+ students over 4 semesters using Google Colab and PyCharm</li>
-                            <li>Achieved 48% improvement in coding assignment performance</li>
-                            <li>Reduced average coding errors per assignment by 40%</li>
-                            <li>Guided students on data analysis, visualization, and GitHub project management</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">📊 Data Analytics Intern</h3>
-                    <p class="card-subtitle">Prabha Engineering Pvt Ltd | Jun 2025 - Aug 2025</p>
-                    <div class="card-content">
-                        <ul>
-                            <li>Analyzed financial and market data for European market expansion feasibility</li>
-                            <li>Built predictive models with NumPy, Pandas, Scikit-learn</li>
-                            <li>Automated monthly reporting, reducing manual effort by 38%</li>
-                            <li>Projected 34% profitability increase from strategic expansion</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2 class="section-title">Projects & Innovation</h2>
-            <div class="cards-container">
-
-                <div class="card">
-                    <h3 class="card-title">🧩 Internship Tracker</h3>
-                    <p class="card-subtitle">Web Application | Aug 2025</p>
-                    <div class="card-content">
-                        A personal project designed to help students and professionals track their internship applications effortlessly. Users can add, update, and manage applications with a clean, intuitive interface.
-                        <br><br>
-                        <a href="https://yug-more.github.io/Internship-Tracker/" target="_blank">🌐 Live Demo</a> |
-                        <a href="https://github.com/Yug-More/Internship-Tracker" target="_blank">💻 GitHub</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">🍔 Restaurant Management System</h3>
-                    <p class="card-subtitle">Object-Oriented Programming Project | Spring 2025</p>
-                    <div class="card-content">
-                        Built a simplified restaurant management system inspired by DoorDash. Implemented core OOP principles to handle menu management, order tracking, and real-time order processing for smoother operations.
-                        <br><br>
-                        <a href="https://github.com/Ab2d248/CS151Fall25_RestaurantManagement" target="_blank">💻 GitHub Repository</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">📚 Yippi</h3>
-                    <p class="card-subtitle">Full-Stack Web Application | May 2025 - Jul 2025</p>
-                    <div class="card-content">
-                        Built web app for students to upload, share, and access course notes. Designed streamlined upload/retrieval system with user-friendly interfaces using HTML, CSS, JavaScript, Node.js, and MySQL.
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">📈 S&P 500 Explorer</h3>
-                    <p class="card-subtitle">Data Science Pipeline | Aug 2023 - Oct 2023</p>
-                    <div class="card-content">
-                        Developed Python pipeline analyzing 500+ companies' market cap, revenue growth, and stock prices. Conducted ANOVA, correlation, regression analysis. Created dashboards with heatmaps, histograms, and scatter plots using Pandas, NumPy, Matplotlib, and Seaborn.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Research Section -->
-        <section id="research">
-            <h2 class="section-title">Research & Publications</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <h3 class="card-title">⚙️ Physics Research</h3>
-                    <p class="card-subtitle">Spring Mass Systems Analysis</p>
-                    <div class="card-content">
-                        Investigated how cross-sectional area of vibrating constant mass affects time period and damping rate in spring mass systems. Conducted experimental analysis with quantitative measurements and statistical evaluation.
-                        <br><br>
-                        <a href="../assets/physics_research.pdf" target="_blank">📄 View Paper</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">💧 Environmental Science</h3>
-                    <p class="card-subtitle">Water Quality Research</p>
-                    <div class="card-content">
-                        Researched temperature effects on dissolved oxygen concentration in water. Published findings contributing to environmental understanding and water quality management practices.
-                        <br><br>
-                        <a href="../assets/water_quality.pdf" target="_blank">📄 View Paper</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">📈 Corporate Analysis</h3>
-                    <p class="card-subtitle">CSR Impact Study</p>
-                    <div class="card-content">
-                        Analyzed Corporate Social Responsibility initiatives at Johnson & Johnson. Examined impact on corporate image and profitability trends since 2018, providing data-driven insights on CSR effectiveness.
-                        <br><br>
-                        <a href="../assets/csr_study.pdf" target="_blank">📄 View Paper</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education">
-            <h2 class="section-title">Education & Honors</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="card-title">🎓 San Jose State University</h3>
-                        <p style="color: #00f5ff; margin-bottom: 10px;">B.S. Computer Science | Expected Spring 2027</p>
-                        <p class="card-content">
-                            GPA: 3.80/4.00
-                        </p>
-                        <div class="honors-list">
-                            <strong>Honors:</strong>
-                            <ul style="margin-top: 8px;">
-                                <li>President's Scholar (Fall 2024)</li>
-                                <li>Dean's Scholar (Fall 2023, Spring 2024, Spring 2025)</li>
-                                <li>Green Star Award (2022)</li>
-                            </ul>
-                        </div>
-                        <p class="card-content" style="margin-top: 15px;">
-                            <strong>Coursework:</strong> Python/Java Programming, Data Structures & Algorithms, OOP Design, Computer Systems, Machine Learning, Discrete Math, Linear Algebra, Calculus I & II
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Junior MBA in Data Analytics -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="card-title">📊 Junior MBA in Data Analytics</h3>
-                        <p style="color: #00f5ff; margin-bottom: 10px;">Clever Harvey | 2021</p>
-                        <p class="card-content">
-                            Completed an intensive 15-day Junior MBA program focused on marketing strategies and data-driven business decisions.  
-                            Gained expertise in using Google Data Studio to visualize data through charts, plots, and stream graphs.  
-                            As a final project, analyzed the <strong>Samsonite Pro DLX 5</strong> product, providing actionable recommendations on audience targeting, pricing, and marketing campaigns.  
-                            This experience honed analytical and strategic skills, fostering proficiency in leveraging data to drive innovation and growth.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- NUS Singapore Summer School -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="card-title">🌏 NUS Singapore Summer School</h3>
-                        <p style="color: #00f5ff; margin-bottom: 10px;">National University of Singapore | 2019</p>
-                        <p class="card-content">
-                            Participated in the <strong>NUS Science Program</strong> with exposure to diverse STEM fields.  
-                            Attended sessions on Automotive and Genetic Engineering, Artificial Intelligence, and Driverless Cars.  
-                            Engaged in <strong>3D Printing Demonstrations</strong> and workshops on Unity and Fusion 360.  
-                            Contributed to group discussions on technology and innovation, and submitted an essay on “Driverless Cars.”  
-                            Received certification for successful completion of the NUS Science Program.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item"><div class="skill-icon">🐍</div><div>Python</div></div>
-                <div class="skill-item"><div class="skill-icon">☕</div><div>Java</div></div>
-                <div class="skill-item"><div class="skill-icon">🌐</div><div>HTML/CSS</div></div>
-                <div class="skill-item"><div class="skill-icon">💻</div><div>JavaScript</div></div>
-                <div class="skill-item"><div class="skill-icon">⚙️</div><div>C++</div></div>
-                <div class="skill-item"><div class="skill-icon">🗄️</div><div>SQL</div></div>
-                <div class="skill-item"><div class="skill-icon">⚛️</div><div>React</div></div>
-                <div class="skill-item"><div class="skill-icon">📦</div><div>Node.js</div></div>
-                <div class="skill-item"><div class="skill-icon">🔥</div><div>Flask</div></div>
-                <div class="skill-item"><div class="skill-icon">🚀</div><div>FastAPI</div></div>
-                <div class="skill-item"><div class="skill-icon">🎨</div><div>Tailwind CSS</div></div>
-                <div class="skill-item"><div class="skill-icon">📊</div><div>Pandas</div></div>
-                <div class="skill-item"><div class="skill-icon">🔢</div><div>NumPy</div></div>
-                <div class="skill-item"><div class="skill-icon">📈</div><div>Matplotlib</div></div>
-                <div class="skill-item"><div class="skill-icon">🧠</div><div>TensorFlow</div></div>
-                <div class="skill-item"><div class="skill-icon">🔥</div><div>PyTorch</div></div>
-                <div class="skill-item"><div class="skill-icon">🍃</div><div>MongoDB</div></div>
-                <div class="skill-item"><div class="skill-icon">🐘</div><div>PostgreSQL</div></div>
-                <div class="skill-item"><div class="skill-icon">☁️</div><div>AWS</div></div>
-                <div class="skill-item"><div class="skill-icon">☁️</div><div>Azure</div></div>
-                <div class="skill-item"><div class="skill-icon">☁️</div><div>GCP</div></div>
-                <div class="skill-item"><div class="skill-icon">🐳</div><div>Docker</div></div>
-                <div class="skill-item"><div class="skill-icon">📝</div><div>Git/GitHub</div></div>
-                <div class="skill-item"><div class="skill-icon">💼</div><div>VS Code</div></div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-container">
-                <p class="hero-description">
-                    B.S. Computer Science at San Jose State University | GPA: 3.80
-                </p>
-                <p class="hero-description">
-                    San Jose, CA | Open to internships and collaborations
-                </p>
-                
-                <div class="contact-links">
-                    <a href="mailto:yugmore20@gmail.com" class="contact-btn">📧 Email</a>
-                    <a href="https://linkedin.com/in/yugmore13" class="contact-btn" target="_blank">💼 LinkedIn</a>
-                    <a href="https://github.com/Yug-More" class="contact-btn" target="_blank">💻 GitHub</a>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- YugAI Chatbot -->
-    <div id="chatbot-container">
-      <div id="chatbot-header" onclick="toggleChat()">🤖 YugAI</div>
-      <div id="chatbot-body">
-        <div id="chat-output"></div>
-        <input id="chat-input" type="text" placeholder="Ask YugAI..." onkeydown="if(event.key==='Enter') sendMessage()">
+      <div class="nav-orbs">
+        <div class="orb" onclick="scrollToSection('experience')">
+          <div class="orb-icon">🚀</div>
+          <div class="orb-label">Experience</div>
+        </div>
+        <div class="orb" onclick="scrollToSection('projects')">
+          <div class="orb-icon">💻</div>
+          <div class="orb-label">Projects</div>
+        </div>
+        <div class="orb" onclick="scrollToSection('research')">
+          <div class="orb-icon">🔬</div>
+          <div class="orb-label">Research</div>
+        </div>
+        <div class="orb" onclick="scrollToSection('education')">
+          <div class="orb-icon">🎓</div>
+          <div class="orb-label">Education</div>
+        </div>
+        <div class="orb" onclick="scrollToSection('skills')">
+          <div class="orb-icon">⚡</div>
+          <div class="orb-label">Skills</div>
+        </div>
+        <div class="orb" onclick="scrollToSection('contact')">
+          <div class="orb-icon">📬</div>
+          <div class="orb-label">Contact</div>
+        </div>
       </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="portfolio.js"></script>
+      <div class="scroll-indicator"></div>
+    </header>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="section-title">Experience Journey</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3 class="card-title">👨‍🏫 Teaching Assistant - Java</h3>
+          <p class="card-subtitle">San Jose State University | Aug 2025 - Present</p>
+          <div class="card-content">
+            <ul>
+              <li>Grade assignments and provide feedback using BlueJ and VS Code to improve code efficiency</li>
+              <li>Guide 50+ students with OOP, data structures, and debugging techniques</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">🏠 Resident Advisor</h3>
+          <p class="card-subtitle">San Jose State University | Jul 2024 - Present</p>
+          <div class="card-content">
+            <ul>
+              <li>Leading community of 200+ residents, fostering leadership and conflict resolution</li>
+              <li>Organized 10+ events promoting well-being and cultural inclusivity</li>
+              <li>Improved student satisfaction by 63% and building occupancy by 12%</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">🐍 Teaching Assistant - Python</h3>
+          <p class="card-subtitle">San Jose State University | Jan 2024 - Present</p>
+          <div class="card-content">
+            <ul>
+              <li>Mentored 400+ students over 4 semesters using Google Colab and PyCharm</li>
+              <li>Achieved 48% improvement in coding assignment performance</li>
+              <li>Reduced average coding errors per assignment by 40%</li>
+              <li>Guided students on data analysis, visualization, and GitHub project management</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">📊 Data Analytics Intern</h3>
+          <p class="card-subtitle">Prabha Engineering Pvt Ltd | Jun 2025 - Aug 2025</p>
+          <div class="card-content">
+            <ul>
+              <li>Analyzed financial and market data for European market expansion feasibility</li>
+              <li>Built predictive models with NumPy, Pandas, Scikit-learn</li>
+              <li>Automated monthly reporting, reducing manual effort by 38%</li>
+              <li>Projected 34% profitability increase from strategic expansion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">Projects & Innovation</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3 class="card-title">🧩 Internship Tracker</h3>
+          <p class="card-subtitle">Web Application | Aug 2025</p>
+          <div class="card-content">
+            A personal project designed to help students and professionals track their internship applications effortlessly. Users can add, update, and manage applications with a clean, intuitive interface.
+            <br><br>
+            <a href="https://yug-more.github.io/Internship-Tracker/" target="_blank">🌐 Live Demo</a> |
+            <a href="https://github.com/Yug-More/Internship-Tracker" target="_blank">💻 GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">🍔 Restaurant Management System</h3>
+          <p class="card-subtitle">Object-Oriented Programming Project | Spring 2025</p>
+          <div class="card-content">
+            Built a simplified restaurant management system inspired by DoorDash. Implemented core OOP principles to handle menu management, order tracking, and real-time order processing for smoother operations.
+            <br><br>
+            <a href="https://github.com/Ab2d248/CS151Fall25_RestaurantManagement" target="_blank">💻 GitHub Repository</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">📚 Yippi</h3>
+          <p class="card-subtitle">Full-Stack Web Application | May 2025 - Jul 2025</p>
+          <div class="card-content">
+            Built web app for students to upload, share, and access course notes. Designed streamlined upload/retrieval system with user-friendly interfaces using HTML, CSS, JavaScript, Node.js, and MySQL.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">📈 S&P 500 Explorer</h3>
+          <p class="card-subtitle">Data Science Pipeline | Aug 2023 - Oct 2023</p>
+          <div class="card-content">
+            Developed Python pipeline analyzing 500+ companies' market cap, revenue growth, and stock prices. Conducted ANOVA, correlation, regression analysis. Created dashboards with heatmaps, histograms, and scatter plots using Pandas, NumPy, Matplotlib, and Seaborn.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+      <h2 class="section-title">Research & Publications</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3 class="card-title">⚙️ Physics Research</h3>
+          <p class="card-subtitle">Spring Mass Systems Analysis</p>
+          <div class="card-content">
+            Investigated how cross-sectional area of vibrating constant mass affects time period and damping rate in spring mass systems. Conducted experimental analysis with quantitative measurements and statistical evaluation.
+            <br><br>
+            <a href="assets/physics_research.pdf" target="_blank">📄 View Paper</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">💧 Environmental Science</h3>
+          <p class="card-subtitle">Water Quality Research</p>
+          <div class="card-content">
+            Researched temperature effects on dissolved oxygen concentration in water. Published findings contributing to environmental understanding and water quality management practices.
+            <br><br>
+            <a href="assets/water_quality.pdf" target="_blank">📄 View Paper</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">📈 Corporate Analysis</h3>
+          <p class="card-subtitle">CSR Impact Study</p>
+          <div class="card-content">
+            Analyzed Corporate Social Responsibility initiatives at Johnson & Johnson. Examined impact on corporate image and profitability trends since 2018, providing data-driven insights on CSR effectiveness.
+            <br><br>
+            <a href="assets/csr_study.pdf" target="_blank">📄 View Paper</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="section-title">Education & Honors</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 class="card-title">🎓 San Jose State University</h3>
+            <p style="color: #00f5ff; margin-bottom: 10px;">B.S. Computer Science | Expected Spring 2027</p>
+            <p class="card-content">GPA: 3.80/4.00</p>
+            <div class="honors-list">
+              <strong>Honors:</strong>
+              <ul style="margin-top: 8px;">
+                <li>President's Scholar (Fall 2024)</li>
+                <li>Dean's Scholar (Fall 2023, Spring 2024, Spring 2025)</li>
+                <li>Green Star Award (2022)</li>
+              </ul>
+            </div>
+            <p class="card-content" style="margin-top: 15px;">
+              <strong>Coursework:</strong> Python/Java Programming, Data Structures & Algorithms, OOP Design, Computer Systems, Machine Learning, Discrete Math, Linear Algebra, Calculus I & II
+            </p>
+          </div>
+        </div>
+
+        <!-- Junior MBA -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 class="card-title">📊 Junior MBA in Data Analytics</h3>
+            <p style="color: #00f5ff; margin-bottom: 10px;">Clever Harvey | 2021</p>
+            <p class="card-content">
+              Completed an intensive 15-day Junior MBA program focused on marketing strategies and data-driven business decisions.  
+              Learned to use Google Data Studio to visualize data with charts, plots, and stream graphs.  
+              Final project analyzed the <strong>Samsonite Pro DLX 5</strong> product for audience targeting, pricing, and marketing campaigns.  
+              Strengthened data analysis and strategic thinking to drive innovation and growth.
+            </p>
+          </div>
+        </div>
+
+        <!-- NUS Summer School -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 class="card-title">🌏 NUS Singapore Summer School</h3>
+            <p style="color: #00f5ff; margin-bottom: 10px;">National University of Singapore | 2019</p>
+            <p class="card-content">
+              Participated in the <strong>NUS Science Program</strong>, exploring Automotive and Genetic Engineering, Artificial Intelligence, and Driverless Cars.  
+              Engaged in <strong>3D Printing Demonstrations</strong> and workshops on Unity and Fusion 360.  
+              Contributed to discussions on innovation and submitted an essay on “Driverless Cars.”  
+              Earned certification for successful completion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><div class="skill-icon">🐍</div><div>Python</div></div>
+        <div class="skill-item"><div class="skill-icon">☕</div><div>Java</div></div>
+        <div class="skill-item"><div class="skill-icon">🌐</div><div>HTML/CSS</div></div>
+        <div class="skill-item"><div class="skill-icon">💻</div><div>JavaScript</div></div>
+        <div class="skill-item"><div class="skill-icon">⚙️</div><div>C++</div></div>
+        <div class="skill-item"><div class="skill-icon">🗄️</div><div>SQL</div></div>
+        <div class="skill-item"><div class="skill-icon">⚛️</div><div>React</div></div>
+        <div class="skill-item"><div class="skill-icon">📦</div><div>Node.js</div></div>
+        <div class="skill-item"><div class="skill-icon">🔥</div><div>Flask</div></div>
+        <div class="skill-item"><div class="skill-icon">🚀</div><div>FastAPI</div></div>
+        <div class="skill-item"><div class="skill-icon">🎨</div><div>Tailwind CSS</div></div>
+        <div class="skill-item"><div class="skill-icon">📊</div><div>Pandas</div></div>
+        <div class="skill-item"><div class="skill-icon">🔢</div><div>NumPy</div></div>
+        <div class="skill-item"><div class="skill-icon">📈</div><div>Matplotlib</div></div>
+        <div class="skill-item"><div class="skill-icon">🧠</div><div>TensorFlow</div></div>
+        <div class="skill-item"><div class="skill-icon">🔥</div><div>PyTorch</div></div>
+        <div class="skill-item"><div class="skill-icon">🍃</div><div>MongoDB</div></div>
+        <div class="skill-item"><div class="skill-icon">🐘</div><div>PostgreSQL</div></div>
+        <div class="skill-item"><div class="skill-icon">☁️</div><div>AWS</div></div>
+        <div class="skill-item"><div class="skill-icon">☁️</div><div>Azure</div></div>
+        <div class="skill-item"><div class="skill-icon">☁️</div><div>GCP</div></div>
+        <div class="skill-item"><div class="skill-icon">🐳</div><div>Docker</div></div>
+        <div class="skill-item"><div class="skill-icon">📝</div><div>Git/GitHub</div></div>
+        <div class="skill-item"><div class="skill-icon">💼</div><div>VS Code</div></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-container">
+        <p class="hero-description">
+          B.S. Computer Science at San Jose State University | GPA: 3.80
+        </p>
+        <p class="hero-description">
+          San Jose, CA | Open to internships and collaborations
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:yugmore20@gmail.com" class="contact-btn" title="Email Yug">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+          <a href="https://linkedin.com/in/yugmore13" class="contact-btn" target="_blank" title="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Yug-More" class="contact-btn" target="_blank" title="GitHub Profile">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- YugAI Chatbot -->
+  <div id="chatbot-container">
+    <div id="chatbot-header" onclick="toggleChat()">🤖 YugAI</div>
+    <div id="chatbot-body">
+      <div id="chat-output"></div>
+      <input id="chat-input" type="text" placeholder="Ask YugAI..." onkeydown="if(event.key==='Enter') sendMessage()">
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="portfolio.js"></script>
 </body>
 </html>
