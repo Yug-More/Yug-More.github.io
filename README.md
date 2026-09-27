@@ -1,18 +1,12 @@
-## Getting Started
+# Yug More
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Portfolio published at [yug-more.github.io](https://yug-more.github.io/).
 
-## Folder Structure
+## Layout
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- `app/` — page, layout, and styles
+- `components/layout/` — navigation, footer, and section frame
+- `components/sections/` — page sections
+- `lib/` — site content and links
+- `public/` — portrait and static files
+- `.github/workflows/` — builds the site and publishes it to GitHub Pages
