@@ -1,3 +1,4 @@
+import { Research } from "@/components/sections/Research";
 import { Footer } from "@/components/layout/Footer";
 import { Nav } from "@/components/layout/Nav";
 import { About } from "@/components/sections/About";
@@ -17,11 +18,12 @@ export default function HomePage() {
       <Nav />
       <main id="content">
         <Hero />
-        <About />
-        <Experience />
         <Projects />
+        <Research />
+        <Experience />
         <Leadership />
         <Achievements />
+        <About />
         <Education />
         <Skills />
         <Philosophy />

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { highlights, site } from "@/lib/site";
 
 export function Hero() {
@@ -8,19 +9,18 @@ export function Hero() {
         <div className="hero-copy">
           <p className="kicker">Computer Science · {site.school}</p>
           <h1 id="hero-title">{site.name}</h1>
-          <p className="roles">Builder, software engineer, and technical educator.</p>
+          <p className="roles">Software engineer. Emerging researcher. Technical educator.</p>
           <p className="intro">
-            I build software where AI, engineering, and real problems meet. That has
-            meant industrial systems, a first-place hackathon product, and several
-            years of teaching computer science.
+            I build intelligent systems and study the boundaries that make them trustworthy—from human-reviewed safety workflows to the security of persistent agent memory.
           </p>
           <div className="actions">
             <a className="button button-primary" href="#projects">
-              Explore My Work
+              Explore selected work ↗
             </a>
             <a className="button button-secondary" href={site.github} target="_blank" rel="noreferrer">
               View GitHub
             </a>
+            <Link className="text-link resume-link" href="/resume/">Résumé ↗</Link>
           </div>
         </div>
         <figure className="portrait-frame">

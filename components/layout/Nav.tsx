@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { GithubIcon, LinkedinIcon } from "@/components/layout/Icons";
 import { nav, site } from "@/lib/site";
 
 export function Nav() {
   const [open, setOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -17,20 +19,24 @@ export function Nav() {
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape" && open) {
+        setOpen(false);
+        menuButton.current?.focus();
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [open]);
 
   return (
     <header className={`nav${scrolled ? " is-scrolled" : ""}${open ? " is-open" : ""}`}>
       <div className="nav-inner">
-        <a className="brand" href="#top" onClick={() => setOpen(false)}>
+        <Link className="brand" href="/#top" onClick={() => setOpen(false)}>
           {site.name}
-        </a>
+        </Link>
         <nav aria-label="Primary">
           <button
+            ref={menuButton}
             className="menu-button"
             type="button"
             aria-expanded={open}

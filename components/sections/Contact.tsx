@@ -21,9 +21,7 @@ export function Contact() {
             <a className="button button-secondary" href={site.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
-            <a className="button button-secondary" href={site.phoneHref}>
-              {site.phoneDisplay}
-            </a>
+
           </div>
         </div>
       </div>

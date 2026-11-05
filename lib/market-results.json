@@ -1,0 +1,242 @@
+[
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "1",
+    "model": "zero_return",
+    "n": "3276",
+    "rmse": "0.012931084823359838",
+    "skill_vs_zero": "0.0"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "1",
+    "model": "historical_mean",
+    "n": "3276",
+    "rmse": "0.012931512856022807",
+    "skill_vs_zero": "-6.620322316108762e-05"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "1",
+    "model": "linear_regression",
+    "n": "3276",
+    "rmse": "0.012938535107806008",
+    "skill_vs_zero": "-0.0011526381274526987"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "1",
+    "model": "random_forest",
+    "n": "3276",
+    "rmse": "0.012786792761503338",
+    "skill_vs_zero": "0.02219257227858118"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "1",
+    "model": "lstm",
+    "n": "3276",
+    "rmse": "0.01336626991431404",
+    "skill_vs_zero": "-0.06844096938117517"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "20",
+    "model": "zero_return",
+    "n": "3276",
+    "rmse": "0.05181378272690178",
+    "skill_vs_zero": "0.0"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "20",
+    "model": "historical_mean",
+    "n": "3276",
+    "rmse": "0.051901898447736516",
+    "skill_vs_zero": "-0.0034041385134535584"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "20",
+    "model": "linear_regression",
+    "n": "3276",
+    "rmse": "0.052189043024518024",
+    "skill_vs_zero": "-0.014537414002243398"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "20",
+    "model": "random_forest",
+    "n": "3276",
+    "rmse": "0.05320648774597929",
+    "skill_vs_zero": "-0.054480573913934904"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "20",
+    "model": "lstm",
+    "n": "3276",
+    "rmse": "0.05444300512296268",
+    "skill_vs_zero": "-0.10406229670648348"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "5",
+    "model": "zero_return",
+    "n": "3276",
+    "rmse": "0.026546376181225486",
+    "skill_vs_zero": "0.0"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "5",
+    "model": "historical_mean",
+    "n": "3276",
+    "rmse": "0.026549094201705977",
+    "skill_vs_zero": "-0.00020478573857074522"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "5",
+    "model": "linear_regression",
+    "n": "3276",
+    "rmse": "0.02656752935195627",
+    "skill_vs_zero": "-0.0015943116616148334"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "5",
+    "model": "random_forest",
+    "n": "3276",
+    "rmse": "0.0262997491250992",
+    "skill_vs_zero": "0.01849453346467711"
+  },
+  {
+    "dataset": "NASDAQ-100",
+    "horizon": "5",
+    "model": "lstm",
+    "n": "3276",
+    "rmse": "0.027098383335479745",
+    "skill_vs_zero": "-0.04202052947842527"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "1",
+    "model": "zero_return",
+    "n": "20412",
+    "rmse": "0.009950533614163539",
+    "skill_vs_zero": "0.0"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "1",
+    "model": "historical_mean",
+    "n": "20412",
+    "rmse": "0.009948242717732536",
+    "skill_vs_zero": "0.00046040399540336896"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "1",
+    "model": "linear_regression",
+    "n": "20412",
+    "rmse": "0.009968429602990277",
+    "skill_vs_zero": "-0.003600225364383869"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "1",
+    "model": "random_forest",
+    "n": "20412",
+    "rmse": "0.009885354147814324",
+    "skill_vs_zero": "0.013057790616523568"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "1",
+    "model": "lstm",
+    "n": "20412",
+    "rmse": "0.0103262179562354",
+    "skill_vs_zero": "-0.07693584581640178"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "20",
+    "model": "zero_return",
+    "n": "20412",
+    "rmse": "0.04388100785165671",
+    "skill_vs_zero": "0.0"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "20",
+    "model": "historical_mean",
+    "n": "20412",
+    "rmse": "0.04367350185093351",
+    "skill_vs_zero": "0.0094353060763811"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "20",
+    "model": "linear_regression",
+    "n": "20412",
+    "rmse": "0.04402312503121931",
+    "skill_vs_zero": "-0.0064878781776835925"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "20",
+    "model": "random_forest",
+    "n": "20412",
+    "rmse": "0.04441877627073086",
+    "skill_vs_zero": "-0.02466049265545167"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "20",
+    "model": "lstm",
+    "n": "20412",
+    "rmse": "0.045554911871248285",
+    "skill_vs_zero": "-0.0777480207797201"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "5",
+    "model": "zero_return",
+    "n": "20412",
+    "rmse": "0.022067448082403584",
+    "skill_vs_zero": "0.0"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "5",
+    "model": "historical_mean",
+    "n": "20412",
+    "rmse": "0.022042444745181636",
+    "skill_vs_zero": "0.002264799465504286"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "5",
+    "model": "linear_regression",
+    "n": "20412",
+    "rmse": "0.022124508183341822",
+    "skill_vs_zero": "-0.005178113143377905"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "5",
+    "model": "random_forest",
+    "n": "20412",
+    "rmse": "0.022104244623823807",
+    "skill_vs_zero": "-0.0033376962868747473"
+  },
+  {
+    "dataset": "S&P 500",
+    "horizon": "5",
+    "model": "lstm",
+    "n": "20412",
+    "rmse": "0.022640488048338018",
+    "skill_vs_zero": "-0.05260963723307843"
+  }
+]

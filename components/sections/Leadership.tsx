@@ -8,6 +8,12 @@ export function Leadership() {
       title="Teaching is a long thread, not a side role."
       intro="I started as an undergraduate teaching assistant in January 2024 and have stayed in the department since. In 2026 I was promoted to Head Computer Science Tutor."
     >
+      <ol className="course-path" aria-label="Teaching development and course connections">
+        <li><strong>2024 → Present</strong><span>CS 22A · Python</span><small>Programming → independent debugging</small></li>
+        <li><strong>Fall 2025</strong><span>CS 46A · Java</span><small>Objects → software design</small></li>
+        <li><strong>Spring 2026</strong><span>CS 171 · ML</span><small>Models → evaluation</small></li>
+        <li><strong>August 2026 → Present</strong><span>Head CS Tutor</span><small>Technical mentoring → tutor leadership</small></li>
+      </ol>
       <div className="lead-grid">
         <article className="lead-card primary">
           <p className="promo">Promoted · August 2026</p>

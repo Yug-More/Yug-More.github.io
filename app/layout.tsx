@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
-import { Newsreader, Schibsted_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const sans = Schibsted_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-});
+const sans = localFont({ src: "./fonts/schibsted.woff2", variable: "--font-sans", display: "swap", weight: "400 900" });
+const serif = localFont({ src: [
+  { path: "./fonts/newsreader.woff2", style: "normal", weight: "200 800" },
+  { path: "./fonts/newsreader-italic.woff2", style: "italic", weight: "200 800" },
+], variable: "--font-serif", display: "swap" });
 
-const serif = Newsreader({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://yug-more.github.io";
 
 export const metadata: Metadata = {
   title: site.title,
@@ -71,7 +64,6 @@ const personJsonLd = {
   name: "Yug More",
   alternateName: "Yug Amol More",
   email: site.email,
-  telephone: "+1-813-817-7538",
   jobTitle: "Computer Science Student",
   affiliation: {
     "@type": "CollegeOrUniversity",

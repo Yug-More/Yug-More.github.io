@@ -4,8 +4,6 @@ export const site = {
   description:
     "Yug More is a Computer Science student at San José State University building software across AI, full-stack engineering, and real-world systems.",
   email: "yugmore20@gmail.com",
-  phoneDisplay: "+1 (813) 817-7538",
-  phoneHref: "tel:+18138177538",
   github: "https://github.com/Yug-More",
   linkedin: "https://www.linkedin.com/in/yugmore13",
   location: "San José, California",
@@ -15,18 +13,17 @@ export const site = {
 } as const;
 
 export const nav = [
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#leadership", label: "Leadership & Teaching" },
-  { href: "#achievements", label: "Achievements" },
-  { href: "#education", label: "Education" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#projects", label: "Selected work" },
+  { href: "/#research", label: "Research" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#leadership", label: "Teaching" },
+  { href: "/#about", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ] as const;
 
 export const highlights = [
-  { label: "1st Place", detail: "Executable World" },
-  { label: "$25K Prize", detail: "SafetyLens" },
-  { label: "Head CS Tutor", detail: "SJSU CSSL" },
-  { label: "Industry experience", detail: "Software & IT" },
+  { label: "Intelligent systems", detail: "Agents, memory & human oversight" },
+  { label: "Independent research", detail: "Security & empirical evaluation" },
+  { label: "Head CS Tutor", detail: "San José State University" },
+  { label: "Enterprise engineering", detail: "Manufacturing & data systems" },
 ] as const;

@@ -20,7 +20,7 @@ export function Experience() {
             <ul>
               <li>
                 Worked on the production-label migration from Loftware to
-                CODESOFT, including 200 templates and JavaScript and SQL for
+                CODESOFT, including JavaScript and SQL for
                 barcodes and customer data.
               </li>
               <li>
@@ -29,15 +29,16 @@ export function Experience() {
                 move off paper, then joined production teams for UAT.
               </li>
               <li>
-                Worked on a four-stage HubSpot-to-Oracle integration with Airbyte
+                Contributed to the design of a HubSpot-to-Oracle integration with Airbyte
                 and MySQL, covering mappings, cleansing, and validation.
               </li>
               <li>
                 Mapped employee, payroll, and tax data for an Oracle-to-Paylocity
                 HCM transition and checked the REST APIs in Postman.
               </li>
-              <li>Worked through analysis of more than 80,000 transactions.</li>
+
             </ul>
+            <details className="enterprise-workflow"><summary>Inspect a migration workflow</summary><p>Sanitized conceptual illustration of the engineering process; no internal company system or proprietary artifact is reproduced.</p><ol><li><strong>Map</strong> — Understand template fields and source-data requirements.</li><li><strong>Validate</strong> — Check JavaScript formatting and SQL-driven values against expected output.</li><li><strong>Review</strong> — Test representative labels and quality workflows with production users during UAT.</li></ol></details>
             <ul className="chips" aria-label="Tools used at L&L Products">
               {[
                 "Oracle",
@@ -68,8 +69,7 @@ export function Experience() {
             <ul>
               <li>
                 Built a Python and Pandas reporting workflow to clean, aggregate,
-                and check monthly financial data, cutting recurring manual
-                reporting effort by 38%.
+                and check monthly financial data to reduce recurring manual reporting.
               </li>
               <li>
                 Modeled revenue, cost, and profitability scenarios with NumPy and
