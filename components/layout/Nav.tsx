@@ -1,21 +1,33 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { GithubIcon, LinkedinIcon } from "@/components/layout/Icons";
 import { nav, site } from "@/lib/site";
 
 export function Nav() {
+  const pathname = usePathname();
+  const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      setScrolled(window.scrollY > 8);
+      const sections = nav.map(item => document.getElementById(item.href.split("#")[1])).filter((item): item is HTMLElement => !!item);
+      let current = "";
+      for (const section of sections) if (section.getBoundingClientRect().top <= 160) current = section.id;
+      setActive(current);
+    };
+    const scroll = () => { if (!frame) frame = requestAnimationFrame(update); };
+    update();
+    window.addEventListener("scroll", scroll, { passive: true });
+    return () => { window.removeEventListener("scroll", scroll); cancelAnimationFrame(frame); };
+  }, [pathname]);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -65,7 +77,7 @@ export function Nav() {
           <ul id="primary-menu" className={`nav-links${open ? " is-open" : ""}`}>
             {nav.map((item) => (
               <li key={item.href}>
-                <a href={item.href} onClick={() => setOpen(false)}>
+                <a href={item.href} aria-current={(pathname.startsWith("/projects/") ? item.href === "/#projects" : active === item.href.split("#")[1]) ? "location" : undefined} onClick={() => setOpen(false)}>
                   {item.label}
                 </a>
               </li>

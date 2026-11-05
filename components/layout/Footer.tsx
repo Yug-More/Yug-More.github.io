@@ -1,3 +1,4 @@
+import { MotionPreference } from "@/components/interactive/MotionPreference";
 import { site } from "@/lib/site";
 
 export function Footer() {
@@ -18,6 +19,7 @@ export function Footer() {
           </a>
           <a href={`mailto:${site.email}`}>Email</a>
         </nav>
+        <MotionPreference />
       </div>
     </footer>
   );

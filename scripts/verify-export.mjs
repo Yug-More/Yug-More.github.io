@@ -3,6 +3,14 @@ import { join } from 'node:path';
 const root = 'out';
 const pages = ['404.html', 'index.html', 'resume/index.html', ...['parallel','memoryfence','marketpulse','safetylens'].map(slug=>`projects/${slug}/index.html`)];
 let links = 0;
+const home = readFileSync(join(root,'index.html'),'utf8');
+for (const content of ['id="explorer"','class="map-alternative"','Read every connection as a list','A bounded agent-memory study']) {
+  if (!home.includes(content)) throw new Error(`Missing server-rendered accessible alternative: ${content}`);
+}
+for (const slug of ['parallel','memoryfence','marketpulse','safetylens']) {
+  const page = readFileSync(join(root,`projects/${slug}/index.html`),'utf8');
+  if (!page.includes('class="evidence-list"') || !page.includes('id="implementation"')) throw new Error(`${slug}: essential static reference content is missing`);
+}
 if (/prefers-color-scheme:dark/.test(readFileSync(join(root,'404.html'),'utf8'))) throw new Error('Default dark 404 theme must not be exported');
 for (const page of pages) {
   const html = readFileSync(join(root,page),'utf8');

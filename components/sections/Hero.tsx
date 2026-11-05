@@ -1,3 +1,4 @@
+import { HeroSystem } from "@/components/interactive/HeroSystem";
 import Image from "next/image";
 import Link from "next/link";
 import { highlights, site } from "@/lib/site";
@@ -36,6 +37,7 @@ export function Hero() {
           <figcaption className="portrait-caption">{site.location}</figcaption>
         </figure>
       </div>
+      <HeroSystem />
       <div className="wrap">
         <ul className="facts">
           {highlights.map((item) => (

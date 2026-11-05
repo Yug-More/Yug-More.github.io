@@ -72,6 +72,7 @@ export function Leadership() {
             </p>
           </article>
         </div>
+        <details className="teaching-focus"><summary>How the courses connect</summary><p>Python builds a vocabulary for programming and debugging. Java makes object boundaries and software design explicit. Machine learning adds experimental reasoning: compare a model, inspect its errors and ask whether the evaluation supports the conclusion. Tutor leadership carries that same emphasis on independent reasoning into mentorship.</p></details>
 
         <div className="split later">
           <div className="aside-list">

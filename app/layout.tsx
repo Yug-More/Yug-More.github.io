@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { site } from "@/lib/site";
 import "./globals.css";
+import "./motion.css";
+import { MotionSystem } from "@/components/interactive/MotionSystem";
 
 const sans = localFont({ src: "./fonts/schibsted.woff2", variable: "--font-sans", display: "swap", weight: "400 900" });
 const serif = localFont({ src: [
@@ -97,6 +99,7 @@ export default function RootLayout({
         <a className="skip-link" href="#content">
           Skip to content
         </a>
+        <MotionSystem />
         {children}
       </body>
     </html>

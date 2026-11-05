@@ -1,3 +1,4 @@
+import { connections } from "./connections";
 import { projects, sourceUrl } from "./projects";
 export type EvidenceItem = {
   claimId: string;
@@ -11,6 +12,12 @@ export type EvidenceItem = {
 // Public case-study sources are rendered directly from this same project record.
 // A repository-reported test run is not a fresh execution or independent validation.
 export const evidence: EvidenceItem[] = [
+  ...connections.flatMap(topic => topic.links.map((link,index) => ({
+    claimId: `connection-${topic.id}-${index + 1}`, subject: link.name,
+    claim: link.relationship, source: link.evidence ?? "Owner-supplied professional/teaching history in the original portfolio",
+    verification: link.evidence ? "repository-inspected" as const : "owner-supplied" as const,
+    disclosurePermitted: true, lastVerified: link.evidence ? "2026-11-05" : null,
+  }))),
   ...projects.flatMap(project => project.sources.map((source, index) => ({
     claimId: `${project.slug}-${index + 1}`, subject: project.name, claim: source.claim,
     source: sourceUrl(project, source.path), verification: "repository-inspected" as const,

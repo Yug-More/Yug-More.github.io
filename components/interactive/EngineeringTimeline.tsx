@@ -1,0 +1,12 @@
+import Link from "next/link";
+const milestones=[
+  {date:"January 2024",title:"Teaching Python",category:"Academic foundation",copy:"Began the undergraduate teaching assistant role in Python, supporting programming fundamentals and independent debugging.",href:"/#leadership",link:"Teaching responsibilities"},
+  {date:"June–August 2025",title:"Reporting as an engineering problem",category:"Industry",copy:"At Prabha Engineering, used Python and Pandas to clean financial data and automate recurring reporting workflows.",href:"/#experience",link:"Professional experience"},
+  {date:"Fall 2025",title:"From programming to product work",category:"Teaching & collaborative systems",copy:"Java teaching and the original Parallel prototype connected software design, shared context and team workflows.",href:"/projects/parallel/",link:"Parallel case study"},
+  {date:"Spring–Summer 2026",title:"Evaluation meets real operations",category:"Machine learning & industry",copy:"Machine-learning teaching and L&L Products work brought model evaluation, SQL validation, migration and user acceptance testing into focus.",href:"/#experience",link:"Enterprise engineering"},
+  {date:"August–September 2026",title:"Mentorship and human oversight",category:"Leadership & applied AI",copy:"Head CS Tutor leadership and the team-built SafetyLens prototype emphasized clear explanations, evidence review and human decisions.",href:"/projects/safetylens/",link:"SafetyLens workflow"},
+  {date:"October 2026",title:"A bounded agent-memory study",category:"Independent research",copy:"MemoryFence’s frozen protocol separates memory persistence, recorded ancestry and actual sandbox tool effects.",href:"/projects/memoryfence/",link:"Research methods & evidence"},
+];
+export function EngineeringTimeline(){
+  return <section className="section" id="journey" aria-labelledby="journey-title"><div className="wrap"><div className="section-head"><p className="eyebrow">An engineering thread</p><h2 id="journey-title">Learning, building, questioning.</h2><p className="section-intro">A connected view of the teaching, industry and research work described throughout this portfolio.</p></div><ol className="journey">{milestones.map(m=><li className="milestone" key={m.date}><div className="milestone-date">{m.date}<span>{m.category}</span></div><details><summary>{m.title}</summary><p>{m.copy}</p><Link className="text-link" href={m.href}>{m.link} ↗</Link></details></li>)}</ol></div></section>;
+}

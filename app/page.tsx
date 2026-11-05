@@ -1,3 +1,5 @@
+import { ResearchExplorer } from "@/components/interactive/ResearchExplorer";
+import { EngineeringTimeline } from "@/components/interactive/EngineeringTimeline";
 import { Research } from "@/components/sections/Research";
 import { Footer } from "@/components/layout/Footer";
 import { Nav } from "@/components/layout/Nav";
@@ -20,8 +22,10 @@ export default function HomePage() {
         <Hero />
         <Projects />
         <Research />
+        <ResearchExplorer />
         <Experience />
         <Leadership />
+        <EngineeringTimeline />
         <Achievements />
         <About />
         <Education />
