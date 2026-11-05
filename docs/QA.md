@@ -2,7 +2,7 @@
 
 November 4, 2026. Tested the actual `out/` static export over localhost.
 
-- ESLint, TypeScript, production build and export validator passed.
+- Clean `npm ci`, ESLint, TypeScript, production build and export validator passed. The release lockfile was regenerated from the manifest in an isolated directory after CI exposed missing optional runtime records.
 - Six portfolio routes: home, résumé, Parallel, MemoryFence, MarketPulse, SafetyLens.
 - All six routes checked at 360, 390, 768 and 1440 px: no document horizontal overflow; correct titles and one h1 per page.
 - Desktop hero and Parallel case study, mobile SafetyLens and research text visually inspected.
