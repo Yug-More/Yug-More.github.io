@@ -1,8 +1,9 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 const root = 'out';
-const pages = ['index.html', 'resume/index.html', ...['parallel','memoryfence','marketpulse','safetylens'].map(slug=>`projects/${slug}/index.html`)];
+const pages = ['404.html', 'index.html', 'resume/index.html', ...['parallel','memoryfence','marketpulse','safetylens'].map(slug=>`projects/${slug}/index.html`)];
 let links = 0;
+if (/prefers-color-scheme:dark/.test(readFileSync(join(root,'404.html'),'utf8'))) throw new Error('Default dark 404 theme must not be exported');
 for (const page of pages) {
   const html = readFileSync(join(root,page),'utf8');
   if ((html.match(/<h1\b/g)||[]).length !== 1) throw new Error(`${page}: expected one h1`);
