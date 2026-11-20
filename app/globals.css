@@ -1290,3 +1290,21 @@ a, button { -webkit-tap-highlight-color: #dde7ed; }
 .yc-pitch-heading .eyebrow { margin:0; }
 .yc-mark { display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; background:#f26522; color:white; font:400 28px/1 Arial,sans-serif; flex-shrink:0; }
 .pitch-card-link { display:flex; font-size:.8rem; margin-top:.6rem; }
+.case .case-header { padding:1.7rem 0; }
+.case-section { padding:1.8rem 0; }
+.case-media-reference, .case-deep-dive { border-top:1px solid var(--line); padding:1rem 0; margin-top:1rem; }
+.case summary { cursor:pointer; min-height:44px; padding:.5rem 0; color:var(--accent); font-size:.9rem; font-weight:600; }
+.case-brief { display:grid; grid-template-columns:9rem 1fr; gap:.8rem 1.4rem; margin:1.3rem 0; }
+.case-brief dt { color:var(--accent); font-size:.78rem; font-weight:600; }
+.case-brief dd { margin:0; font-size:.98rem; }
+.brief-result > h2 { font-size:clamp(1.5rem,3vw,2rem); max-width:44rem; line-height:1.25; }
+.brief-boundary { font-size:.9rem; color:var(--muted); }
+.case .yc-pitch { padding:1.2rem; }
+.case .yc-pitch > h2 { font-size:1.8rem; }
+.case .yc-pitch > p { font-size:.85rem; }
+.case .pitch-preview { grid-template-columns:minmax(140px,220px) 1fr; padding:.7rem; margin-top:.8rem; }
+.teaching-video { padding:1rem; gap:.6rem; }
+.teaching-thumbnail { position:relative; width:100%; }
+.teaching-thumbnail img { width:100%; display:block; }
+.teaching-thumbnail .video-play { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); background:#fff; padding:.5rem 1rem; border-radius:3px; }
+@media(max-width:640px){.case-brief{grid-template-columns:1fr;gap:.3rem}.case-brief dd{margin-bottom:.8rem}.case .pitch-preview{grid-template-columns:1fr}}
