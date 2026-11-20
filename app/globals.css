@@ -1228,3 +1228,14 @@ a, button { -webkit-tap-highlight-color: #dde7ed; }
 .enterprise-workflow summary { cursor: pointer; font-weight: 600; min-height: 44px; }
 .enterprise-workflow p, .enterprise-workflow ol { font-size: .9rem; }
 .architecture { margin-top: 1.5rem; }
+
+.portfolio-disclosure { width:min(1120px,calc(100% - 2.5rem)); margin:1rem auto 2rem; border-top:1px solid var(--line); padding:1rem 0; }
+.portfolio-disclosure > summary, .additional-work > summary, .section.wrap > details > summary { cursor:pointer; min-height:44px; padding:.5rem 0; color:var(--accent); font-weight:600; }
+.portfolio-disclosure .wrap { width:100%; }
+.section.wrap > h2 { font:400 clamp(2rem,4vw,3rem)/1.15 var(--font-serif); margin:.5rem 0 1.5rem; }
+.section.wrap > details { margin-top:1.5rem; border-top:1px solid var(--line); padding-top:.8rem; }
+.section.wrap > details .wrap { width:100%; }
+.project-proof { font-size:.86rem; line-height:1.6; border-top:1px solid var(--line); padding-top:1rem; }
+.project-proof dt { color:var(--accent); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; margin-top:.8rem; }
+.project-proof dd { margin:.25rem 0 0; color:var(--ink-soft); }
+.project-status { font-size:.75rem; color:var(--accent)!important; }

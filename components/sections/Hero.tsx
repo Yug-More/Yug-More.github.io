@@ -12,7 +12,7 @@ export function Hero() {
           <h1 id="hero-title">{site.name}</h1>
           <p className="roles">Software engineer. Emerging researcher. Technical educator.</p>
           <p className="intro">
-            I build intelligent systems and study the boundaries that make them trustworthy—from human-reviewed safety workflows to the security of persistent agent memory.
+            I’m a computer science student building reliable AI agents and intelligent software systems. My work connects source-linked collaboration, human-reviewed workflows and the security of persistent agent memory.
           </p>
           <div className="actions">
             <a className="button button-primary" href="#projects">

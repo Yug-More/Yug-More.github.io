@@ -3,7 +3,7 @@ import { Section } from "@/components/layout/Section";
 export function Experience() {
   return (
     <Section
-      id="experience"
+      id="experience-detail"
       eyebrow="Experience"
       title="Industry work, in real operations."
       intro="Two internships so far: manufacturing technology at L&L Products, and data work at Prabha Engineering."

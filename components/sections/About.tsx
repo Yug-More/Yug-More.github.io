@@ -11,7 +11,7 @@ const interests = [
 export function About() {
   return (
     <Section
-      id="about"
+      id="about-detail"
       eyebrow="About"
       title="Engineering, teaching, and the habit of shipping."
       intro="I’m a computer science student at San José State University. The work I care about sits between writing software, understanding a product, and helping other people get unstuck."

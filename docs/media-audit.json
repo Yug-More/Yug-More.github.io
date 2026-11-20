@@ -1,0 +1,44 @@
+{
+  "reviewed": "2026-11-20",
+  "plan": [
+    "Preserve pinned case-study evidence",
+    "Condense homepage with progressive disclosure",
+    "Add contribution and result to four featured cards",
+    "Publish only identified public media",
+    "Run export checks and deploy"
+  ],
+  "video": {
+    "url": "https://www.youtube.com/watch?v=BCP2kmdBVRU",
+    "title": "Parallel | YC Spring 2026 Application Video",
+    "channel": "Yug More",
+    "participants": [
+      "Yug More",
+      "Sean Aminov"
+    ],
+    "verification": "YouTube oEmbed title/channel; participants confirmed by owner",
+    "presentation": "Public watch link only; no iframe or private application material hosted",
+    "qualification": "Application pitch; no acceptance, funding or affiliation implied"
+  },
+  "missing": [
+    "Primary award records and exact credit/cash breakdown for Parallel competitions",
+    "Institutional evidence for dated honors",
+    "Explicit public embedding authorization if an inline pitch player is desired",
+    "Other project demonstration URLs"
+  ],
+  "claims": {
+    "parallel": "Retain pinned 40-query returned-set recall .900 and MRR .818; do not relabel as recall@5 or change test count without source verification",
+    "memoryfence": "Current README includes follow-up studies; existing case remains explicitly pinned to original bounded study. New test/coverage counts withheld",
+    "safetylens": "62 features and 70 recordings not verified from implementation in this pass; withheld; distressing image remains prohibited",
+    "marketpulse": "Existing saved data retained; LSTM framework not inferred"
+  },
+  "assets": "Existing authentic portfolio captures and research figures retained. No local video files or authorized current PDF resume supplied; existing HTML summary remains labeled as a print-friendly summary.",
+  "orq": {
+    "url": "https://drive.google.com/file/d/1IqZ9I2jWES_3BfMJYvlDvCESJnpShMEz/view",
+    "title": "Orq Silicon Valley Business Competition 2026.mp4",
+    "source": "Owner supplied; public Drive page title inspected",
+    "repository": "https://github.com/Yug-More/orch",
+    "implementation": "server/src/index.ts inspected; fixed roles, heuristic routing, templated outputs, JSON storage; no live model call verified",
+    "websiteRepository": "orq-web is empty",
+    "presentation": "External watch link; footage not downloaded or treated as proof of every product claim"
+  }
+}

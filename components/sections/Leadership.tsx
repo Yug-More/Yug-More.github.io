@@ -3,7 +3,7 @@ import { Section } from "@/components/layout/Section";
 export function Leadership() {
   return (
     <Section
-      id="leadership"
+      id="leadership-detail"
       eyebrow="Leadership & Teaching"
       title="Teaching is a long thread, not a side role."
       intro="I started as an undergraduate teaching assistant in January 2024 and have stayed in the department since. In 2026 I was promoted to Head Computer Science Tutor."
