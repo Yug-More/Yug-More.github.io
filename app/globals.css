@@ -1239,3 +1239,5 @@ a, button { -webkit-tap-highlight-color: #dde7ed; }
 .project-proof dt { color:var(--accent); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; margin-top:.8rem; }
 .project-proof dd { margin:.25rem 0 0; color:var(--ink-soft); }
 .project-status { font-size:.75rem; color:var(--accent)!important; }
+
+.project-card .text-link { display:flex; width:fit-content; }
