@@ -1,9 +1,9 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 const root = 'out';
-const pages = ['404.html', 'index.html', 'resume/index.html', ...['parallel','memoryfence','marketpulse','safetylens'].map(slug=>`projects/${slug}/index.html`)];
+const pages = ['404.html', 'about/index.html', 'index.html', 'resume/index.html', ...['parallel','memoryfence','marketpulse','safetylens'].map(slug=>`projects/${slug}/index.html`)];
 let links = 0;
-const home = readFileSync(join(root,'index.html'),'utf8');
+const home = readFileSync(join(root,'about/index.html'),'utf8');
 for (const content of ['id="explorer"','class="map-alternative"','Read every connection as a list','A bounded agent-memory study']) {
   if (!home.includes(content)) throw new Error(`Missing server-rendered accessible alternative: ${content}`);
 }

@@ -14,10 +14,10 @@ export const site = {
 
 export const nav = [
   { href: "/#projects", label: "Selected work" },
-  { href: "/#research", label: "Research" },
+  { href: "/#achievements", label: "Recognition" },
   { href: "/#experience", label: "Experience" },
   { href: "/#leadership", label: "Teaching" },
-  { href: "/#about", label: "About" },
+  { href: "/about/", label: "Background" },
   { href: "/#contact", label: "Contact" },
 ] as const;
 

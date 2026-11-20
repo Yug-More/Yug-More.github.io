@@ -14,7 +14,7 @@ export const connections = [
   ]},
   { id:"engineering", label:"Reliable software", question:"How do we turn a workflow into something inspectable, testable and maintainable?", methods:["Python / SQL","Validation and UAT","Explicit state transitions","React / FastAPI"], links:[
     {name:"Parallel", href:"/projects/parallel/", relationship:"Combines a modular API, migrated SQL store and leased worker with inspectable receipts.", evidence:"https://github.com/Yug-More/Parallel/blob/fb3b3fb75cd381103cf9fc39755e4f4d2aad6e38/docs/ARCHITECTURE.md"},
-    {name:"L&L Products", href:"/#experience", relationship:"Production-label migration, SQL validation and user acceptance testing. Experience description is owner-supplied; no private employer artifacts are published.", evidence:null},
-    {name:"Technical teaching", href:"/#leadership", relationship:"Programming, design and debugging developed through Python, Java and ML teaching roles. Role history is owner-supplied.", evidence:null},
+    {name:"L&L Products", href:"/about/#experience-detail", relationship:"Production-label migration, SQL validation and user acceptance testing. Experience description is owner-supplied; no private employer artifacts are published.", evidence:null},
+    {name:"Technical teaching", href:"/about/#leadership-detail", relationship:"Programming, design and debugging developed through Python, Java and ML teaching roles. Role history is owner-supplied.", evidence:null},
   ]},
 ] as const;

@@ -18,7 +18,7 @@ export function Nav() {
     const update = () => {
       frame = 0;
       setScrolled(window.scrollY > 8);
-      const sections = nav.map(item => document.getElementById(item.href.split("#")[1])).filter((item): item is HTMLElement => !!item);
+      const sections = nav.map(item => document.getElementById(item.href.split("#")[1] ?? "")).filter((item): item is HTMLElement => !!item);
       let current = "";
       for (const section of sections) if (section.getBoundingClientRect().top <= 160) current = section.id;
       setActive(current);

@@ -40,5 +40,26 @@
     "implementation": "server/src/index.ts inspected; fixed roles, heuristic routing, templated outputs, JSON storage; no live model call verified",
     "websiteRepository": "orq-web is empty",
     "presentation": "External watch link; footage not downloaded or treated as proof of every product claim"
+  },
+  "teaching": {
+    "url": "https://drive.google.com/file/d/1bIrfxvQa2X30kIQEyGr7SzCPwgR8HVzy/view",
+    "title": "Yug More Teaching.mp4",
+    "verification": "Public Drive page title accessible without an access-gate message; playback and embedding not independently confirmed",
+    "description": "Python multiplication-game instruction, as described by owner",
+    "presentation": "External watch card; no download or rehosting"
+  },
+  "editorialRevision": {
+    "removedFromHome": [
+      "six-stage hero sketch",
+      "decorative facts",
+      "research preview repetition",
+      "knowledge map",
+      "timeline",
+      "philosophy",
+      "full skills/education/resume-length role detail"
+    ],
+    "retainedElsewhere": "Substantive background, experience, teaching and research connections moved to /about/",
+    "verified": "Parallel evaluation documentation explicitly defines macro recall@5 .900 at cutoff five; MRR .817708 on nonempty relevance labels. MarketPulse model source imports torch and uses nn.LSTM.",
+    "awardLimits": "Two Continual Learning track wins supported; overall first place, Scoop second and AdvisrAI placement not independently corroborated in this pass. No prize sums or participant counts added."
   }
 }

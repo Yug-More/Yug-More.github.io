@@ -1,7 +1,6 @@
-import { HeroSystem } from "@/components/interactive/HeroSystem";
 import Image from "next/image";
 import Link from "next/link";
-import { highlights, site } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -21,7 +20,7 @@ export function Hero() {
             <a className="button button-secondary" href={site.github} target="_blank" rel="noreferrer">
               View GitHub
             </a>
-            <Link className="text-link resume-link" href="/resume/">Résumé ↗</Link>
+            <Link className="text-link resume-link" href="/resume/">Résumé ↗</Link><a className="text-link resume-link" href="#contact">Contact ↗</a>
           </div>
         </div>
         <figure className="portrait-frame">
@@ -36,17 +35,6 @@ export function Hero() {
           />
           <figcaption className="portrait-caption">{site.location}</figcaption>
         </figure>
-      </div>
-      <HeroSystem />
-      <div className="wrap">
-        <ul className="facts">
-          {highlights.map((item) => (
-            <li key={item.label}>
-              <strong>{item.label}</strong>
-              <span>{item.detail}</span>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );
