@@ -61,5 +61,12 @@
     "retainedElsewhere": "Substantive background, experience, teaching and research connections moved to /about/",
     "verified": "Parallel evaluation documentation explicitly defines macro recall@5 .900 at cutoff five; MRR .817708 on nonempty relevance labels. MarketPulse model source imports torch and uses nn.LSTM.",
     "awardLimits": "Two Continual Learning track wins supported; overall first place, Scoop second and AdvisrAI placement not independently corroborated in this pass. No prize sums or participant counts added."
+  },
+  "safetylensPitch": {
+    "url": "https://www.youtube.com/watch?v=8DRMEeQYebk",
+    "title": "Safety Lens Final",
+    "channel": "Sean Aminov",
+    "verification": "Owner identifies SafetyLens pitch; YouTube oEmbed confirms title and channel",
+    "presentation": "External watch link only; footage not reviewed. No thumbnail or autoplay embed, preserving the restriction against distressing imagery."
   }
 }
