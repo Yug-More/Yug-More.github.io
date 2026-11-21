@@ -1308,3 +1308,22 @@ a, button { -webkit-tap-highlight-color: #dde7ed; }
 .teaching-thumbnail img { width:100%; display:block; }
 .teaching-thumbnail .video-play { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); background:#fff; padding:.5rem 1rem; border-radius:3px; }
 @media(max-width:640px){.case-brief{grid-template-columns:1fr;gap:.3rem}.case-brief dd{margin-bottom:.8rem}.case .pitch-preview{grid-template-columns:1fr}}
+/* Plain headings and a quieter project reading layout. */
+.hero { padding-block:3rem; }
+.hero .intro { max-width:36rem; font-size:1.08rem; margin-top:1.5rem; }
+.hero .actions { margin-top:1.4rem; }
+.work-copy .work-number::before { display:none; }
+.work-copy .project-status { margin:.6rem 0; }
+.project-proof dt { text-transform:none; letter-spacing:0; font-size:.82rem; }
+.case .case-header { padding-bottom:1.2rem; }
+.case .case-header h1 { font-size:clamp(3rem,6vw,4.5rem); }
+.case .case-facts { margin:.8rem 0 0; padding:.3rem 0; }
+.case .case-nav { margin-top:1rem; }
+.case .case-section .eyebrow { display:none; }
+.case .brief-overview > h2 { font-size:1.7rem; }
+.case .brief-result > h2 { font:500 1.3rem/1.5 var(--font-sans); letter-spacing:-.015em; }
+.case .yc-pitch { border:0; border-left:2px solid var(--line-strong); padding:1rem 1.2rem; background:transparent; }
+.case .pitch-preview { background:white; }
+.contribution-sources { padding-left:1.1rem; font-size:.85rem; }
+.contribution-sources li { margin:.5rem 0; }
+.contribution-sources a { color:var(--accent); text-underline-offset:.2em; }

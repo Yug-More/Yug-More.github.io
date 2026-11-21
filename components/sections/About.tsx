@@ -5,7 +5,7 @@ const interests = [
   "Artificial intelligence and machine learning",
   "Full-stack product development",
   "Technical teaching and mentorship",
-  "Building tools people can actually use",
+  "Software reliability and evaluation",
 ];
 
 export function About() {
@@ -13,22 +13,13 @@ export function About() {
     <Section
       id="about-detail"
       eyebrow="About"
-      title="Engineering, teaching, and the habit of shipping."
-      intro="I’m a computer science student at San José State University. The work I care about sits between writing software, understanding a product, and helping other people get unstuck."
+      title="About"
+      intro="I study computer science at San José State University, with graduation expected in May 2027."
     >
       <div className="about-grid">
         <div className="prose">
-          <p>
-            I like environments where engineering, product judgment, and fast
-            iteration happen in the same room. That has included IT and
-            manufacturing systems, full-stack and AI projects, hackathons, and a
-            long stretch of teaching in the computer science department.
-          </p>
-          <p>
-            Longer term, I want to found a technology company. The way there is
-            more time building in industry: systems that have users, constraints,
-            and consequences.
-          </p>
+          <p>My projects include a collaborative AI workspace, a workplace-safety prototype and experimental studies of agent memory and financial forecasting.</p>
+          <p>I have worked in manufacturing IT and data analytics, and teach programming and machine learning as an undergraduate teaching assistant and Head CS Tutor.</p>
         </div>
         <aside className="interest-panel" aria-label="Interests">
           <h3>Interests</h3>

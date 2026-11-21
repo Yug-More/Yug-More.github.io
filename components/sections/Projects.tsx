@@ -4,7 +4,7 @@ import { projects } from "@/lib/projects";
 const order = ["parallel","memoryfence","marketpulse","safetylens"];
 export function Projects() {
   const work = order.map(slug=>projects.find(p=>p.slug===slug)!).map(({slug,name,category,summary,image,stack})=>({slug,name,category,summary,image,stack}));
-  return <Section id="projects" eyebrow="01 / Selected work" title="Engineering & research" intro="Explore what I built, how it works and what the evidence supports.">
+  return <Section id="projects" eyebrow="01 / Selected work" title="Projects">
     <ProjectExplorer work={work} />
     <details className="additional-work"><summary>Secondary projects archive</summary><div className="project-grid">
       <article className="project-card"><p className="status">Course team project · In development</p><h3>FindIt</h3><p>React Native lost-and-found application with report browsing, matching and ownership-claim workflows. FastAPI, Supabase and Gemini embeddings; live submissions depend on configured backend services.</p><a className="text-link" href="https://github.com/Yug-More/find-it">Source & implementation status ↗</a></article>

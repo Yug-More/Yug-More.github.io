@@ -5,7 +5,7 @@ export function Leadership() {
     <Section
       id="leadership-detail"
       eyebrow="Leadership & Teaching"
-      title="Teaching is a long thread, not a side role."
+      title="Teaching & leadership"
       intro="I started as an undergraduate teaching assistant in January 2024 and have stayed in the department since. In 2026 I was promoted to Head Computer Science Tutor."
     >
       <ol className="course-path" aria-label="Teaching development and course connections">

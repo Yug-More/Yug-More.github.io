@@ -40,8 +40,8 @@ export function Skills() {
     <Section
       id="skills"
       eyebrow="Skills"
-      title="Tools I have actually used."
-      intro="Grouped by where they show up in projects, classes, or internships. No proficiency bars."
+      title="Technical skills"
+      intro="Grouped by where they show up in projects, classes, or internships. "
     >
       <div className="skill-grid">
         {groups.map((group) => (

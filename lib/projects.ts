@@ -1,3 +1,4 @@
+import { contributions } from "./contributions";
 export type Project = {
   slug: string; name: string; category: string; summary: string; repo: string; revision: string;
   image: string; caption: string; role: string; stack: string; problem: string;
@@ -11,7 +12,7 @@ export const projects: Project[] = [
     summary: "From camera evidence to a policy-grounded response—with a person in control.",
     repo: "SafetyLens", revision: "178f0f8a77f2f6c664822fe6ef09f62ff6342f15",
     image: "/images/projects/safetylens.svg", caption: "Explanatory diagram drawn for this portfolio from the implemented prototype workflow. This is an architecture illustration, not a product screenshot.",
-    role: "Backend, database, video ingestion, analysis providers, policy retrieval, approvals, reporting and shared frontend integration. Team: Yug More, Abhinav GS and Sean Aminov. Sean owned the local detector; Abhinav owned demo-help and demonstration documentation.",
+    role: contributions["safetylens"].detail,
     stack: "Next.js · TypeScript · FastAPI · SQLite · MediaPipe · OpenCV",
     problem: "Safety operators often need to find a camera clip, locate the appropriate procedure and coordinate a response in separate tools. SafetyLens explores a single review workflow that keeps evidence, policy and decisions together.",
     implementation: [
@@ -43,7 +44,7 @@ export const projects: Project[] = [
     summary: "A shared workspace for source-linked decisions and bounded, human-controlled agents.",
     repo: "Parallel", revision: "fb3b3fb75cd381103cf9fc39755e4f4d2aad6e38",
     image: "/images/projects/parallel.png", caption: "Real application capture from the repository’s persisted release-review walkthrough. All accounts, messages and project records in this capture are synthetic.",
-    role: "Originally led frontend development, with contributions to product decisions, backend ideas and the team demonstration. The current repository has evolved beyond the original hackathon prototype; this case study distinguishes current system behavior from that original role.",
+    role: contributions["parallel"].detail,
     stack: "React 19 · Vite · FastAPI · SQLAlchemy · Alembic · SQLite / PostgreSQL",
     problem: "Team conversations, documents and decisions fragment across tools. Parallel keeps inspectable project context beside tasks and bounded agent workflows, with explicit authority for consequential changes.",
     implementation: [
@@ -75,7 +76,7 @@ export const projects: Project[] = [
     summary: "What survives when an AI agent forgets a source, but keeps its descendants?",
     repo: "memoryfence", revision: "f51a8360aca39a428ca41bfc9afe10447d175d72",
     image: "/images/projects/memoryfence.svg", caption: "Original repository figure from the declared paired provenance and deletion study. These are memory-state measurements conditional on shared generated text, not independent model trials.",
-    role: "Independent research project on persistent agent memory, recorded provenance and authorization. The repository includes the harness, frozen protocols, genuine response archives, independent verifiers and an unsubmitted manuscript; no peer review is claimed.",
+    role: contributions["memoryfence"].detail,
     stack: "Python · Pydantic · SQLite · Ollama · Controlled experiments",
     problem: "Attacker-origin instructions can pass from a shared source into summaries and consolidated memories. Removing the original note may leave derived text retrievable, particularly when recorded ancestry is incomplete. The study separates memory exposure from actual authorized tool effects.",
     implementation: [
@@ -107,7 +108,7 @@ export const projects: Project[] = [
     summary: "Testing whether model complexity earns its place against simple forecasting baselines.",
     repo: "MarketPulse", revision: "d2ce4c25506a291b0c69254a8127419795a64123",
     image: "/images/projects/marketpulse.png", caption: "Genuine point-forecast skill figure generated from committed study results. Findings are retrospective and conditional on these stored index histories.",
-    role: "A course project extended into an empirical research pipeline. Original contributor history is preserved in the repository; the study is presented as a retrospective investigation, with an unreviewed manuscript and explicit data-provenance limits.",
+    role: contributions["marketpulse"].detail,
     stack: "Python · Pandas · scikit-learn · LSTM · Walk-forward evaluation",
     problem: "A complex forecasting model can look compelling without producing reliable gains over simple methods. MarketPulse asks how model comparisons change across market histories, prediction horizons and repeated chronological evaluation.",
     implementation: [

@@ -9,18 +9,17 @@ export function Hero() {
         <div className="hero-copy">
           <p className="kicker">Computer Science · {site.school}</p>
           <h1 id="hero-title">{site.name}</h1>
-          <p className="roles">Software engineer. Emerging researcher. Technical educator.</p>
           <p className="intro">
-            I’m a computer science student building reliable AI agents and intelligent software systems. My work connects source-linked collaboration, human-reviewed workflows and the security of persistent agent memory.
+            I study computer science at San José State University. I build software for team collaboration and workplace safety, and study AI-agent memory security and machine-learning evaluation.
           </p>
           <div className="actions">
             <a className="button button-primary" href="#projects">
-              Explore selected work ↗
+              Projects
             </a>
             <a className="button button-secondary" href={site.github} target="_blank" rel="noreferrer">
-              View GitHub
+              GitHub
             </a>
-            <Link className="text-link resume-link" href="/resume/">Résumé ↗</Link><a className="text-link resume-link" href="#contact">Contact ↗</a>
+            <Link className="text-link resume-link" href="/resume/">Résumé</Link><a className="text-link resume-link" href="#contact">Contact</a>
           </div>
         </div>
         <figure className="portrait-frame">

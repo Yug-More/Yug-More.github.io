@@ -5,7 +5,7 @@ export function Experience() {
     <Section
       id="experience-detail"
       eyebrow="Experience"
-      title="Industry work, in real operations."
+      title="Internships"
       intro="Two internships so far: manufacturing technology at L&L Products, and data work at Prabha Engineering."
     >
       <div className="timeline">
