@@ -1327,3 +1327,23 @@ a, button { -webkit-tap-highlight-color: #dde7ed; }
 .contribution-sources { padding-left:1.1rem; font-size:.85rem; }
 .contribution-sources li { margin:.5rem 0; }
 .contribution-sources a { color:var(--accent); text-underline-offset:.2em; }
+
+/* Editorial hierarchy: identity, practice, credentials, then evidence. */
+.hero { padding-block:clamp(3rem,6vw,6rem); border-bottom:1px solid var(--line); }
+.hero-grid { grid-template-columns:minmax(0,1.65fr) minmax(200px,.7fr); gap:clamp(2rem,5vw,5rem); }
+.hero h1 { font-size:clamp(3.5rem,7vw,6.5rem); margin-bottom:1.4rem; }
+.hero-position { font-family:var(--font-serif); font-size:clamp(1.8rem,3vw,2.8rem); line-height:1.12; letter-spacing:-.035em; margin:0 0 1.5rem; text-wrap:balance; }
+.hero-credentials { color:#315C78; font-size:.95rem; font-weight:600; line-height:1.7; margin-bottom:1.2rem; }
+.hero .intro { font-size:1rem; line-height:1.75; max-width:56ch; margin-top:0; }
+.hero .portrait-frame { max-width:320px; padding:12px; background:#fff; border:1px solid #dedbd2; box-shadow:14px 14px 0 #eae7de; }
+.hero .portrait-caption { margin:12px 0 0; font-size:.85rem; }
+.section-heading h2 { letter-spacing:-.045em; }
+.work-item { background:#fff; border:1px solid #dedbd2; transition:box-shadow .2s,border-color .2s; }
+.work-item:hover { border-color:#aebbc3; box-shadow:0 8px 28px #17171708; }
+.work-copy h3 { font-size:2rem; letter-spacing:-.035em; }
+.work-copy .project-proof { padding-top:1rem; border-top:1px solid #e6e3db; }
+.case .brief-overview { border-left:3px solid #315C78; padding-left:clamp(1rem,3vw,2rem); }
+.case .brief-result { padding:clamp(1.2rem,3vw,2rem); background:#fff; border:1px solid #dedbd2; }
+.case .brief-result > h2 { font-size:clamp(1.2rem,2vw,1.6rem); }
+@media(max-width:640px){.hero-grid{grid-template-columns:1fr}.hero .portrait-frame{width:160px;justify-self:start;box-shadow:8px 8px 0 #eae7de}.hero-position{font-size:1.9rem}.hero-credentials{font-size:.9rem}.hero h1{font-size:3.7rem}.hero{padding-block:2.5rem}.work-copy h3{font-size:1.8rem}}
+@media(prefers-reduced-motion:reduce){.work-item{transition:none}}

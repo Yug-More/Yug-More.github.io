@@ -7,14 +7,16 @@ export function Hero() {
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="wrap hero-grid">
         <div className="hero-copy">
-          <p className="kicker">Computer Science · {site.school}</p>
+          <p className="kicker">Full-stack engineering · AI systems</p>
           <h1 id="hero-title">{site.name}</h1>
+          <p className="hero-position">Building software.<br />Investigating how AI systems behave.</p>
+          <p className="hero-credentials">B.S. in Computer Science · San José State University<br />Undergraduate Teaching Assistant &amp; Head CS Tutor</p>
           <p className="intro">
-            I study computer science at San José State University. I build software for team collaboration and workplace safety, and study AI-agent memory security and machine-learning evaluation.
+            I lead full-stack development for Parallel, build workplace-safety tools with SafetyLens, and investigate agent-memory security through MemoryFence. Alongside engineering and research, I teach Python, Java and machine learning.
           </p>
           <div className="actions">
             <a className="button button-primary" href="#projects">
-              Projects
+              Explore my work
             </a>
             <a className="button button-secondary" href={site.github} target="_blank" rel="noreferrer">
               GitHub
