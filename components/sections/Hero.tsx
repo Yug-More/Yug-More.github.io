@@ -11,7 +11,7 @@ export function Hero() {
           <p className="hero-position">Full-stack developer.<br />Computer science educator.</p>
           <p className="hero-credentials">Pursuing a B.S. in Computer Science · San José State University<br />Undergraduate Teaching Assistant &amp; Head CS Tutor</p>
           <p className="intro">
-            I’m a computer science undergraduate at San José State University, where I serve as an Undergraduate Teaching Assistant and Head CS Tutor. My work spans full-stack development, AI-agent security research and industry experience in enterprise systems and data analytics.
+            My work spans full-stack development, AI-agent security research and machine-learning evaluation, informed by industry experience in enterprise systems and data analytics.
           </p>
           <div className="actions">
             <a className="button button-primary" href="#projects">
